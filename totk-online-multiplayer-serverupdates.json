@@ -1,0 +1,3 @@
+[
+  {"UpdateStageName":"Install patched TotK server files","UpdateSourcePlatform":"Linux","UpdateSource":"CopyFilePath","UpdateSourceData":"/opt/totk/totk-server.zip","UpdateSourceTarget":"{{$FullRootDir}}","UnzipUpdateSource":true,"OverwriteExistingFiles":false,"SkipOnFailure":false}
+]

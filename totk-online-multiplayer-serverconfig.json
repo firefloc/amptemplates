@@ -1,0 +1,5 @@
+[
+  {"DisplayName":"Minimum Memory","Category":"Tears of the Kingdom Online Multiplayer Server:joystick","Subcategory":"Java:settings:1","Description":"Minimum Java heap allocation.","Keywords":"memory,java,heap","FieldName":"MinMemory","InputType":"number","ParamFieldName":"MinMemory","IncludeInCommandLine":false,"DefaultValue":"512","Suffix":"MB","EnumValues":{}},
+  {"DisplayName":"Maximum Memory","Category":"Tears of the Kingdom Online Multiplayer Server:joystick","Subcategory":"Java:settings:1","Description":"Maximum Java heap allocation. Keep this below the instance memory limit.","Keywords":"memory,java,heap","FieldName":"MaxMemory","InputType":"number","ParamFieldName":"MaxMemory","IncludeInCommandLine":false,"DefaultValue":"2048","Suffix":"MB","EnumValues":{}},
+  {"DisplayName":"Additional Java Arguments","Category":"Tears of the Kingdom Online Multiplayer Server:joystick","Subcategory":"Java:settings:1","Description":"Optional JVM arguments added before server.jar.","Keywords":"java,jvm,arguments","FieldName":"CustomJavaArgs","InputType":"text","ParamFieldName":"CustomJavaArgs","IncludeInCommandLine":false,"DefaultValue":"","EnumValues":{}}
+]
