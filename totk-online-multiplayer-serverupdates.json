@@ -1,8 +1,20 @@
 [
   {
-    "UpdateStageName": "Manual server installation",
-    "UpdateStageDescription": "Copy the official TotK server release files into the instance root before its first start.",
-    "UpdateSourcePlatform": "All",
-    "UpdateSource": "None"
+    "UpdateStageName": "Install Temurin Java 25",
+    "UpdateStageDescription": "Downloads the Java 25 runtime required by the TotK server.",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSourceArch": "x86_64",
+    "UpdateSource": "Executable",
+    "UpdateSourceData": "/bin/bash",
+    "UpdateSourceArgs": "-c \"cd totk-online-multiplayer-server && rm -rf java && rm -f java.tar.gz && wget -qO java.tar.gz https://api.adoptium.net/v3/binary/latest/25/ga/linux/x64/jdk/hotspot/normal/eclipse && mkdir -p java && tar -xzf java.tar.gz -C java --strip-components=1 && rm -f java.tar.gz && chmod +x java/bin/java && java/bin/java --version\""
+  },
+  {
+    "UpdateStageName": "Install Temurin Java 25",
+    "UpdateStageDescription": "Downloads the Java 25 runtime required by the TotK server.",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSourceArch": "aarch64",
+    "UpdateSource": "Executable",
+    "UpdateSourceData": "/bin/bash",
+    "UpdateSourceArgs": "-c \"cd totk-online-multiplayer-server && rm -rf java && rm -f java.tar.gz && wget -qO java.tar.gz https://api.adoptium.net/v3/binary/latest/25/ga/linux/aarch64/jdk/hotspot/normal/eclipse && mkdir -p java && tar -xzf java.tar.gz -C java --strip-components=1 && rm -f java.tar.gz && chmod +x java/bin/java && java/bin/java --version\""
   }
 ]
