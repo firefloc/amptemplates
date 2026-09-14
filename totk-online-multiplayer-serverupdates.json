@@ -1,0 +1,8 @@
+[
+  {
+    "UpdateStageName": "Manual server installation",
+    "UpdateStageDescription": "Copy the official TotK server release files into the instance root before its first start.",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "None"
+  }
+]
