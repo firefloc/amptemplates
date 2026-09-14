@@ -1,0 +1,11 @@
+[
+  {
+    "UpdateStageName": "Synchronize TotK server port",
+    "UpdateStageDescription": "Writes the AMP-assigned server port to the TotK server configuration before startup.",
+    "UpdateSourcePlatform": "Linux",
+    "UpdateSource": "Executable",
+    "UpdateSourceData": "/bin/bash",
+    "UpdateSourceArgs": "-c \"sed -i -E 's/(\\\"port\\\"[[:space:]]*:[[:space:]]*)[0-9]+/\\1{{ServerPort}}/' '{{$FullBaseDir}}Resources/TOTKServer/serverCreator.ktml'\"",
+    "SkipOnFailure": false
+  }
+]

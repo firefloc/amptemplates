@@ -34,7 +34,7 @@ App.ExecutableLinux=java/bin/java
 App.WorkingDir=
 App.LinuxCommandLineArgs=
 App.WindowsCommandLineArgs=
-App.CommandLineArgs=-Xms{{MinMemory}}M -Xmx{{MaxMemory}}M {{CustomJavaArgs}} -jar server.jar
+App.CommandLineArgs=--enable-native-access=ALL-UNNAMED -Dpolyglot.engine.WarnInterpreterOnly=false -Xms{{MinMemory}}M -Xmx{{MaxMemory}}M {{CustomJavaArgs}} -jar server.jar
 App.UseLinuxIOREDIR=False
 App.AppSettings={}
 App.EnvironmentVariables={}
@@ -67,7 +67,7 @@ App.RCONHeartbeatMinutes=0
 App.RCONHeartbeatCommand=
 App.TelnetLoginFormat=
 App.UpdateSources=@IncludeJson[totk-online-multiplayer-serverupdates.json]
-App.PreStartStages=[]
+App.PreStartStages=@IncludeJson[totk-online-multiplayer-serverstart.json]
 App.ForceUpdate=False
 App.ForceUpdateReason=
 App.Compatibility=None
